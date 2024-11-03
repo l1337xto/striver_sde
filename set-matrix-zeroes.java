@@ -31,6 +31,7 @@ class Solution {
                 }
             }
         }
+        // zero out the columns keeping the first row as reference
         for (int i = 1; i < rows; i++) {
             if (matrix[i][0] == 0) {
                 for (int j = 1; j < columns; j++) {
@@ -38,6 +39,7 @@ class Solution {
                 }
             }
         }
+        // zero out the rows keeping the first column as reference
         for (int j = 1; j < columns; j++) {
             if (matrix[0][j] == 0) {
                 for (int i = 1; i < rows; i++) {
